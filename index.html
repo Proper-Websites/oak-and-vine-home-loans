@@ -34,7 +34,7 @@
           <a href="#learning-center">Learning Center</a>
           <a href="#about-us">About Us</a>
         </nav>
-        <a class="btn btn-outline" href="#contact">Hotline: (805) 555-0192</a>
+        <a class="btn btn-solid" href="#">Get Started Now</a>
       </div>
     </header>
 
@@ -45,9 +45,9 @@
             <p class="eyebrow">Fixed, VA, FHA, ARM, Jumbo</p>
             <h1>Home Loan Plans For Life's Journey</h1>
             <p class="lead">
-              Explore mortgage solutions for buying or refinancing with guidance
-              from experienced local brokers, quick pre-qualification, and
-              access to a broad lender network.
+              Explore mortgage solutions for buying or refinancing with a local
+              mortgage broker team, access to a broad lender network, and
+              pre-qualification often within about 24 hours.
             </p>
             <div class="hero-actions">
               <a class="btn btn-solid" href="#contact">Get Started Now</a>
@@ -55,8 +55,8 @@
             </div>
             <div class="hero-metrics">
               <article>
-                <h3>48h</h3>
-                <p>Fast-track pre-qual responses</p>
+                <h3>24h</h3>
+                <p>Pre-qual turnaround in many cases</p>
               </article>
               <article>
                 <h3>$250M+</h3>
@@ -99,11 +99,16 @@
                   <option>Compare Loan Programs</option>
                 </select>
               </label>
-              <button class="btn btn-solid full" type="submit">Get My Options</button>
+              <button class="btn btn-solid full" type="submit">View Options</button>
             </form>
             <article class="safe-card">
               <strong>~24 hr pre-qualification</strong>
-              <div class="safe-track"><span></span></div>
+              <div class="safe-track" aria-hidden="true">
+                <span class="milestone is-done" data-stage="Docs"></span>
+                <span class="milestone is-done" data-stage="Review"></span>
+                <span class="milestone is-done" data-stage="Underwrite"></span>
+                <span class="milestone is-current" data-stage="Letter"></span>
+              </div>
             </article>
           </aside>
         </div>
@@ -143,13 +148,69 @@
           </div>
         </div>
       </section>
+      <section class="why-us" id="about-us">
+        <div class="container why-grid">
+          <div class="why-left">
+            <p class="eyebrow">Why Choose Us?</p>
+            <h2>Always Ready To Assist You</h2>
+            <p>
+              Oak &amp; Vine combines local market knowledge with access to
+              multiple lenders, helping buyers and refinancers compare options
+              and move forward with confidence.
+            </p>
+            <a class="btn btn-solid" href="#contact">Learn More</a>
+          </div>
+
+          <div class="why-right">
+            <article class="why-item">
+              <span class="why-check why-check--clock" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <circle cx="12" cy="12" r="7.5"></circle>
+                  <path d="M12 8.5v4.1l2.8 1.6"></path>
+                </svg>
+              </span>
+              <div>
+                <h3>Fast Pre-Qualification Turnaround</h3>
+                <p>Receive clear next steps and a pre-qual path, often within roughly 24 hours.</p>
+              </div>
+            </article>
+
+            <article class="why-item">
+              <span class="why-check why-check--form" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <rect x="6.5" y="5.5" width="11" height="13" rx="1.6"></rect>
+                  <path d="M9 9.2h6M9 12h6M9 14.8h3.4"></path>
+                </svg>
+              </span>
+              <div>
+                <h3>Program Fit Across Lenders</h3>
+                <p>As a mortgage broker, we compare lender options and loan structures in one guided process.</p>
+              </div>
+            </article>
+
+            <article class="why-item">
+              <span class="why-check why-check--pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path d="M12 20.2s-5.3-4.9-5.3-8.6A5.3 5.3 0 0 1 12 6.3a5.3 5.3 0 0 1 5.3 5.3c0 3.7-5.3 8.6-5.3 8.6z"></path>
+                  <circle cx="12" cy="11.6" r="1.8"></circle>
+                </svg>
+              </span>
+              <div>
+                <h3>Local Guidance Through Closing</h3>
+                <p>Work with a local team that understands area timelines, expectations, and neighborhood dynamics.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="highlights" id="solutions">
         <div class="container cards-grid">
           <article class="feature-card">
             <h3>Purchase &amp; Refinance</h3>
             <p>
-              Oak &amp; Vine supports both home purchases and refinancing with a
-              full-service advisory approach.
+              Oak &amp; Vine supports home purchases and refinancing with
+              one-on-one guidance and a local, broker-led approach.
             </p>
           </article>
           <article class="feature-card">
@@ -162,115 +223,41 @@
           <article class="feature-card">
             <h3>No-Obligation Consultation</h3>
             <p>
-              Start with a free consultation to review your goals, documents,
-              and best-fit borrowing path.
+              Start with a free, no-obligation consultation to review your
+              goals, documents, and best-fit borrowing path.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="why-us" id="about-us">
-        <div class="container why-grid">
-          <div class="why-left">
-            <p class="eyebrow">Why Choose Us?</p>
-            <h2>Always Ready To Assist You</h2>
-            <p>
-              Oak &amp; Vine combines local market insight with broker-level
-              lender access to help you move from planning to closing with less
-              stress and more confidence.
-            </p>
-            <a class="btn btn-solid" href="#contact">Know More</a>
+      <section class="insights" id="learning-center">
+        <div class="container insights-wrap">
+          <div class="section-head">
+            <p class="eyebrow">Learning Center</p>
+            <h2>Local guidance to help you decide with confidence.</h2>
           </div>
-
-          <div class="why-right">
-            <article class="why-item">
-              <span class="why-check" aria-hidden="true">✓</span>
-              <div>
-                <h3>Fast Pre-Qualification Turnaround</h3>
-                <p>Receive clear next steps and a pre-qual path, often within roughly 24 hours.</p>
-              </div>
-            </article>
-
-            <article class="why-item">
-              <span class="why-check" aria-hidden="true">✓</span>
-              <div>
-                <h3>Program Fit Across Lenders</h3>
-                <p>Compare fixed, VA, FHA, ARM, jumbo, and related options in one guided process.</p>
-              </div>
-            </article>
-
-            <article class="why-item">
-              <span class="why-check" aria-hidden="true">✓</span>
-              <div>
-                <h3>Local Guidance Through Closing</h3>
-                <p>Work with a team that understands local timelines, expectations, and neighborhood dynamics.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="reviews" id="reviews">
-        <div class="container testimonial-wrap">
-          <div class="testimonial-intro">
-            <p class="eyebrow">Client Voices</p>
-            <h2>What Users Says About Our Service</h2>
-            <p>
-              Local buyers and homeowners trust Oak &amp; Vine for clear guidance,
-              responsive communication, and loan options tailored to real goals.
-            </p>
-          </div>
-          <div class="testimonial-slider" aria-live="polite">
-            <article class="testimonial-card is-active" data-slide="0">
-              <p class="testimonial-copy">
-                “Our pre-qualification came through fast, and every number was
-                explained clearly before we made our first offer.”
+          <div class="insight-grid">
+            <article class="insight-card">
+              <h3>Pre-Approval Basics</h3>
+              <p>
+                Understand what documents matter most, what underwriters look
+                for, and how to strengthen your file before you shop homes.
               </p>
-              <div class="testimonial-meta">
-                <span class="avatar">AH</span>
-                <div>
-                  <strong>Amelia Hart</strong>
-                  <small>First-Time Buyer</small>
-                </div>
-              </div>
-              <span class="quote-mark" aria-hidden="true">”</span>
             </article>
-
-            <article class="testimonial-card" data-slide="1">
-              <p class="testimonial-copy">
-                “Being able to compare multiple lender paths in one conversation
-                made refinancing much easier than we expected.”
+            <article class="insight-card">
+              <h3>Rate vs. Payment</h3>
+              <p>
+                Compare rate, term, and closing cost tradeoffs to see how each
+                structure impacts monthly payment and total borrowing cost.
               </p>
-              <div class="testimonial-meta">
-                <span class="avatar">MT</span>
-                <div>
-                  <strong>Marcus Tran</strong>
-                  <small>Refinance Client</small>
-                </div>
-              </div>
-              <span class="quote-mark" aria-hidden="true">”</span>
             </article>
-
-            <article class="testimonial-card" data-slide="2">
-              <p class="testimonial-copy">
-                “The team coordinated with our agent, kept timelines moving, and
-                helped us close with confidence.”
+            <article class="insight-card">
+              <h3>Offer-Ready Strategy</h3>
+              <p>
+                Build a clean financing strategy with your agent so your offer
+                is strong, realistic, and aligned with your timeline.
               </p>
-              <div class="testimonial-meta">
-                <span class="avatar">CR</span>
-                <div>
-                  <strong>Chris Rivera</strong>
-                  <small>Move-Up Buyer</small>
-                </div>
-              </div>
-              <span class="quote-mark" aria-hidden="true">”</span>
             </article>
-
-            <div class="slider-dots" role="tablist" aria-label="Testimonial slides">
-              <button class="dot is-active" type="button" data-dot="0" aria-label="Slide 1"></button>
-              <button class="dot" type="button" data-dot="1" aria-label="Slide 2"></button>
-              <button class="dot" type="button" data-dot="2" aria-label="Slide 3"></button>
-            </div>
           </div>
         </div>
       </section>
@@ -283,24 +270,24 @@
           </div>
           <div class="faq-grid">
             <article>
-              <h3>How soon should I get pre-approved?</h3>
+              <h3>How much cash do I need for a down payment?</h3>
               <p>
-                As early as possible. Pre-qualification helps define budget and
-                strengthens your position when you make an offer.
+                Typical down payments can range from 5% to 20%, depending on
+                home price and loan type. Your scenario determines the best fit.
               </p>
             </article>
             <article>
               <h3>What is needed to pre-qualify?</h3>
               <p>
-                Typical documents include two years of tax returns and W-2s,
-                recent paystubs, recent bank statements, and a photo ID.
+                Typical items include tax returns and W-2s from the past 2
+                years, recent paystubs, recent bank statements, and a photo ID.
               </p>
             </article>
             <article>
               <h3>Broker vs. direct lender?</h3>
               <p>
-                A direct lender offers its own products. A broker can shop
-                multiple lenders to find a better-fit program.
+                A direct lender offers its own products. A mortgage broker can
+                compare programs from multiple lenders to help find a better fit.
               </p>
             </article>
           </div>
@@ -308,7 +295,7 @@
       </section>
 
       <section class="faq-spotlight" aria-label="FAQ spotlight">
-        <div class="container faq-spotlight-grid">
+        <div class="faq-spotlight-grid">
           <div class="faq-spotlight-intro">
             <p class="eyebrow">Read FAQ</p>
             <h2>Frequently Asked Questions</h2>
@@ -316,7 +303,7 @@
               Get quick answers on pre-qualification, required documents, and
               how broker-guided lending compares with going direct to one lender.
             </p>
-            <a class="btn btn-solid" href="#contact">Know More</a>
+            <a class="btn btn-solid" href="#contact">Learn More</a>
           </div>
 
           <div class="faq-spotlight-list">
@@ -338,6 +325,13 @@
                 <span class="qa-dot">↓</span>
                 <span>What documents are typically needed?</span>
               </button>
+              <div class="qa-body">
+                <p>
+                  Most files need tax returns and W-2s from the past 2 years,
+                  bank or asset statements from the past 2 months, paystubs from
+                  the last 30 days, and a valid photo ID.
+                </p>
+              </div>
             </article>
 
             <article class="qa-item">
@@ -345,6 +339,13 @@
                 <span class="qa-dot">↓</span>
                 <span>Broker vs. direct lender: what is the difference?</span>
               </button>
+              <div class="qa-body">
+                <p>
+                  A direct lender offers only its own products. A broker can
+                  compare programs across multiple lenders and help match your
+                  goals with the strongest fit.
+                </p>
+              </div>
             </article>
 
             <article class="qa-item">
@@ -352,7 +353,90 @@
                 <span class="qa-dot">↓</span>
                 <span>Which programs do you support?</span>
               </button>
+              <div class="qa-body">
+                <p>
+                  We commonly support fixed-rate, VA, FHA, ARM, high-balance,
+                  and jumbo loan programs, depending on qualification and goals.
+                </p>
+              </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container testimonial-wrap">
+          <div class="testimonial-intro">
+            <p class="eyebrow">Client Voices</p>
+            <h2>What Clients Say About Our Service</h2>
+            <p>
+              Local buyers and homeowners trust Oak &amp; Vine for clear guidance,
+              responsive communication, and loan options tailored to real goals.
+            </p>
+          </div>
+          <div class="testimonial-slider" aria-live="polite">
+            <article class="testimonial-card is-active" data-slide="0">
+              <p class="testimonial-copy">
+                “Our pre-qualification came through fast, and every number was
+                explained clearly before we made our first offer.”
+              </p>
+              <div class="testimonial-meta">
+                <div>
+                  <strong>Amelia Hart</strong>
+                  <small>First-Time Buyer</small>
+                </div>
+              </div>
+              <span class="quote-mark" aria-hidden="true">”</span>
+            </article>
+
+            <article class="testimonial-card" data-slide="1">
+              <p class="testimonial-copy">
+                “Being able to compare multiple lender paths in one conversation
+                made refinancing much easier than we expected.”
+              </p>
+              <div class="testimonial-meta">
+                <div>
+                  <strong>Marcus Tran</strong>
+                  <small>Refinance Client</small>
+                </div>
+              </div>
+              <span class="quote-mark" aria-hidden="true">”</span>
+            </article>
+
+            <article class="testimonial-card" data-slide="2">
+              <p class="testimonial-copy">
+                “The team coordinated with our agent, kept timelines moving, and
+                helped us close with confidence.”
+              </p>
+              <div class="testimonial-meta">
+                <div>
+                  <strong>Chris Rivera</strong>
+                  <small>Move-Up Buyer</small>
+                </div>
+              </div>
+              <span class="quote-mark" aria-hidden="true">”</span>
+            </article>
+
+            <article class="testimonial-card" data-slide="3">
+              <p class="testimonial-copy">
+                “From first call to final signatures, communication stayed clear
+                and we always knew what was next on the timeline.”
+              </p>
+              <div class="testimonial-meta">
+                <div>
+                  <strong>Natalie Brooks</strong>
+                  <small>Home Purchase Client</small>
+                </div>
+              </div>
+              <span class="quote-mark" aria-hidden="true">”</span>
+            </article>
+
+            <div class="slider-dots" role="tablist" aria-label="Testimonial slides">
+              <button class="dot is-active" type="button" data-dot="0" aria-label="Slide 1"></button>
+              <button class="dot" type="button" data-dot="1" aria-label="Slide 2"></button>
+              <button class="dot" type="button" data-dot="2" aria-label="Slide 3"></button>
+              <button class="dot" type="button" data-dot="3" aria-label="Slide 4"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -367,9 +451,9 @@
               can help you map the right next step.
             </p>
             <ul>
-              <li><strong>Call:</strong> (805) 555-0192</li>
+              <li><strong>Call:</strong> 805-819-2131</li>
               <li><strong>Email:</strong> hello@oakandvinehomeloans.com</li>
-              <li><strong>Hours:</strong> Mon-Fri, 8:00 AM - 6:00 PM</li>
+              <li><strong>Hours:</strong> Monday-Friday, 9:00 AM - 4:30 PM</li>
             </ul>
           </div>
 
@@ -432,26 +516,107 @@
       (function () {
         const cards = Array.from(document.querySelectorAll(".testimonial-card"));
         const dots = Array.from(document.querySelectorAll(".slider-dots .dot"));
-        if (!cards.length || !dots.length) return;
+        if (cards.length && dots.length) {
+          let active = 0;
+          const setSlide = (index) => {
+            active = index;
+            cards.forEach((card, i) => {
+              card.classList.toggle("is-active", i === index);
+            });
+            dots.forEach((dot, i) => {
+              dot.classList.toggle("is-active", i === index);
+            });
+          };
 
-        let active = 0;
-        const setSlide = (index) => {
-          active = index;
-          cards.forEach((card, i) => {
-            card.classList.toggle("is-active", i === index);
+          dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => setSlide(index));
           });
-          dots.forEach((dot, i) => {
-            dot.classList.toggle("is-active", i === index);
+
+          setInterval(() => {
+            setSlide((active + 1) % cards.length);
+          }, 4500);
+        }
+
+        const qaItems = Array.from(document.querySelectorAll(".qa-item"));
+        qaItems.forEach((item) => {
+          const trigger = item.querySelector(".qa-head");
+          const dot = item.querySelector(".qa-dot");
+          if (!trigger) return;
+
+          trigger.addEventListener("click", () => {
+            const willOpen = !item.classList.contains("is-open");
+
+            qaItems.forEach((other) => {
+              const otherTrigger = other.querySelector(".qa-head");
+              const otherDot = other.querySelector(".qa-dot");
+              const open = other === item && willOpen;
+              other.classList.toggle("is-open", open);
+              if (otherTrigger) {
+                otherTrigger.setAttribute("aria-expanded", String(open));
+              }
+              if (otherDot) {
+                otherDot.textContent = open ? "↗" : "↓";
+              }
+            });
+          });
+
+          const isOpen = item.classList.contains("is-open");
+          trigger.setAttribute("aria-expanded", String(isOpen));
+          if (dot) {
+            dot.textContent = isOpen ? "↗" : "↓";
+          }
+        });
+
+        const addReveals = (selector, stagger = 0) => {
+          const nodes = Array.from(document.querySelectorAll(selector));
+          nodes.forEach((node, index) => {
+            if (node.classList.contains("reveal-on-scroll")) return;
+            node.classList.add("reveal-on-scroll");
+            if (stagger) {
+              node.style.setProperty("--reveal-delay", `${index * stagger}ms`);
+            }
           });
         };
 
-        dots.forEach((dot, index) => {
-          dot.addEventListener("click", () => setSlide(index));
-        });
+        addReveals(".hero-copy, .hero-visual", 120);
+        addReveals(".hero-actions .btn", 90);
+        addReveals(".hero-metrics article", 110);
+        addReveals(".section-head", 80);
+        addReveals(".feature-card", 90);
+        addReveals(".insight-card", 90);
+        addReveals(".step", 90);
+        addReveals(".why-left", 80);
+        addReveals(".why-item", 90);
+        addReveals(".testimonial-intro, .testimonial-slider", 120);
+        addReveals(".faq-grid article", 90);
+        addReveals(".faq-spotlight-intro, .qa-item", 80);
+        addReveals(".contact-info, .contact-form", 120);
+        addReveals(".footer-main, .footer-sub", 100);
 
-        setInterval(() => {
-          setSlide((active + 1) % cards.length);
-        }, 4500);
+        const revealTargets = Array.from(document.querySelectorAll(".reveal-on-scroll"));
+        if (!revealTargets.length) return;
+
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reducedMotion || !("IntersectionObserver" in window)) {
+          revealTargets.forEach((node) => node.classList.add("is-visible"));
+          return;
+        }
+
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              obs.unobserve(entry.target);
+            });
+          },
+          {
+            threshold: 0.16,
+            rootMargin: "0px 0px -8% 0px",
+          },
+        );
+
+        revealTargets.forEach((target) => observer.observe(target));
       })();
     </script>
   </body>
