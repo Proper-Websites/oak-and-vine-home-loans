@@ -1067,6 +1067,19 @@ html.ov-menu-lock, html.ov-menu-lock body{ overflow: hidden !important; }
 	.elementor-16 .elementor-element.elementor-element-234269d{ min-width: 0; }
 }
 
+/* White header bar: side gutters at every width. The bar's wrapper is boxed
+   at the kit's 1300px content width, so narrower viewports let the bar touch
+   the screen edges. Keep a floor: 32px per side (matching the body sections)
+   and 14px per side on phones. e-con-inner centers itself (margin auto). */
+.elementor-16 .elementor-element.elementor-element-8dd7c57 > .e-con-inner{
+	max-width: min(var(--content-width), calc(100% - 64px));
+}
+@media (max-width: 767px){
+	.elementor-16 .elementor-element.elementor-element-8dd7c57 > .e-con-inner{
+		max-width: calc(100% - 28px);
+	}
+}
+
 @media (prefers-reduced-motion: reduce){
 	#ov-menu{ transition: none; }
 	.ov-menu-nav li{ transition: none; opacity: 1; transform: none; }
