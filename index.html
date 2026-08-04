@@ -264,14 +264,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 }
 
 @media (max-width: 767px){
-	/* ===== Mobile hero: taller section, content pinned to the bottom =====
-	   Content sits flex-end with a fixed 72px floor (the gap it had when the
-	   hero was 660px and centered), so extra height only grows the photo
-	   area above the content. The lower part of the hero never moves. */
+	/* ===== Mobile hero: content pinned to the bottom =====
+	   Content sits flex-end with a fixed 56px floor, so any extra height
+	   only grows the photo area above the content. The lower part of the
+	   hero never moves. */
 	.elementor-24 .elementor-element.elementor-element-12ccafdc{
-		--min-height: clamp(560px, 84vh, 720px);
+		--min-height: clamp(500px, 72vh, 620px);
 		--justify-content: flex-end;
-		--padding-bottom: 64px;
+		--padding-bottom: 56px;
 	}
 	.elementor-24 .elementor-element.elementor-element-28ddb1a .elementor-heading-title{
 		font-size: clamp(2.85rem, 12vw, 3.1rem);
@@ -2506,16 +2506,13 @@ html.ov-menu-lock, html.ov-menu-lock body{ overflow: hidden !important; }
 	.elementor-16 .elementor-element.elementor-element-234269d{ min-width: 0; }
 }
 
-/* White header bar: side gutters at every width. The bar's wrapper is boxed
-   at the kit's 1300px content width, so narrower viewports let the bar touch
-   the screen edges. Keep a floor: 32px per side (matching the body sections)
-   and 14px per side on phones. e-con-inner centers itself (margin auto). */
-.elementor-16 .elementor-element.elementor-element-8dd7c57 > .e-con-inner{
-	max-width: min(var(--content-width), calc(100% - 64px));
-}
-@media (max-width: 767px){
+/* White header bar: side gutters on tablet and up. The bar's wrapper is
+   boxed at the kit's 1300px content width, so narrower viewports let the
+   bar touch the screen edges. Keep a 32px floor per side (matching the
+   body sections). On phones the bar spans the full width. */
+@media (min-width: 768px){
 	.elementor-16 .elementor-element.elementor-element-8dd7c57 > .e-con-inner{
-		max-width: calc(100% - 28px);
+		max-width: min(var(--content-width), calc(100% - 64px));
 	}
 }
 
