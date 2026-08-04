@@ -265,12 +265,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 @media (max-width: 767px){
 	/* ===== Mobile hero: content pinned to the bottom =====
-	   Content sits flex-end with a fixed 56px floor, so any extra height
-	   only grows the photo area above the content. The lower part of the
-	   hero never moves. */
+	   Content sits flex-end with a fixed 56px floor. The section is
+	   content-driven on phones (min-height is only a safety floor), so its
+	   height = top padding + content + 56px. The kit's 117px top padding
+	   is the photo area above the headline; trim there to change height. */
 	.elementor-24 .elementor-element.elementor-element-12ccafdc{
-		--min-height: clamp(500px, 72vh, 620px);
+		--min-height: clamp(440px, 62vh, 540px);
 		--justify-content: flex-end;
+		--padding-top: 36px;
 		--padding-bottom: 56px;
 	}
 	.elementor-24 .elementor-element.elementor-element-28ddb1a .elementor-heading-title{
