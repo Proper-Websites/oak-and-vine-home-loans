@@ -1067,6 +1067,17 @@ html.ov-menu-lock, html.ov-menu-lock body{ overflow: hidden !important; }
 	.elementor-16 .elementor-element.elementor-element-234269d{ min-width: 0; }
 }
 
+/* Laptop band: the kit grows the logo img from 47% of its column (wide
+   screens, ~100x50) to 100% (~155x77), which inflates the whole white bar
+   from 80px to 107px tall. Pin the logo to the wide-screen height so the
+   bar looks identical from 1025px up. */
+@media (min-width: 1025px) and (max-width: 1366px){
+	.elementor-16 .elementor-element.elementor-element-479917f img{
+		width: auto;
+		height: 50px;
+	}
+}
+
 /* White header bar: side gutters on tablet and up. The bar's wrapper is
    boxed at the kit's 1300px content width, so narrower viewports let the
    bar touch the screen edges. Keep a 32px floor per side (matching the
